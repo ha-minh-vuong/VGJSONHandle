@@ -45,12 +45,18 @@
 @property (nonatomic, readonly) id jsonObject;
 
 /*!
- * Initializes a new VGJSONHandle object with a specified JSON.
+ * Initializes a new object with a specified JSON.
  * @param jsonObject The input JSON object.
- * @return The newly initialized VGJSONHandle object.
+ * @return The newly initialized object.
  */
 - (id)initWithJSONObject:(id)jsonObject;
 
+/*!
+ * Returns an array of values for a specific key in JSON.
+ * @discussion Collect all the values of a specific key in JSON into an array.
+ * @param key The key for which searching value.
+ * @return The array of values for the key.
+ */
 - (NSArray *)objectsForKey:(NSString *)key;
 
 - (id)objectForKey:(NSString *)key;
