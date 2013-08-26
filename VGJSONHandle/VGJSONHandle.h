@@ -46,6 +46,8 @@
 
 /*!
  * Initializes a new VGJSONHandle object with a specified JSON.
+ * @param jsonObject The input JSON object.
+ * @return The newly initialized VGJSONHandle object.
  */
 - (id)initWithJSONObject:(id)jsonObject;
 
