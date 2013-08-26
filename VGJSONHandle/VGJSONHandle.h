@@ -39,7 +39,7 @@
  */
 + (void)convertNilToNSNull:(NSUInteger)count,...;
 
-/*! 
+/*!
  * Returns the JSON object of receiver.
  */
 @property (nonatomic, readonly) id jsonObject;
