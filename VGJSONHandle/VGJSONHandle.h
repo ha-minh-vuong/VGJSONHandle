@@ -44,6 +44,9 @@
  */
 @property (nonatomic, readonly) id jsonObject;
 
+/*!
+ * Initializes a new VGJSONHandle object with a specified JSON.
+ */
 - (id)initWithJSONObject:(id)jsonObject;
 
 - (NSArray *)objectsForKey:(NSString *)key;
