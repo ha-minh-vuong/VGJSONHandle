@@ -29,8 +29,19 @@
 
 @interface VGJSONHandle : NSObject
 
+
+/*!
+ * nil variable will change its value to NSNull.
+ * @discussion Make nil variable contains NSNull. 
+ * The variable won't be touched if it stores a value.
+ * @param count The number of variables need to convert.
+ * @param ... A comma-separated list of variables need to convert.
+ */
 + (void)convertNilToNSNull:(NSUInteger)count,...;
 
+/*! 
+ * Returns the JSON object of receiver.
+ */
 @property (nonatomic, readonly) id jsonObject;
 
 - (id)initWithJSONObject:(id)jsonObject;
