@@ -59,6 +59,14 @@
  */
 - (NSArray *)objectsForKey:(NSString *)key;
 
+/*!
+ * Returns a value for a specific key in JSON.
+ * @discussion This method searches the key in JSON object.
+ * When the first key was found, the method returns its value returned immediately.
+ * When the key was not found, it returns nil.
+ * @key key The key for which searching value.
+ * @return The value for the key, nil if key does not existed.
+ */
 - (id)objectForKey:(NSString *)key;
 
 - (id)objectForKeyPath:(NSString *)keyPath;
