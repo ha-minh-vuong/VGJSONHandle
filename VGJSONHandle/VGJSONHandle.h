@@ -69,6 +69,12 @@
  */
 - (id)objectForKey:(NSString *)key;
 
+/*!
+ * Returns a value for a specific key path in JSON.
+ * @discussion On the way along the key path, it must be a dictionary.
+ * @keyPath The key path in JSON, separate by dot '.'. For example `key.key1.key.`.
+ * @return The value of the key path in JSON, nil if key path does not existed.
+ */
 - (id)objectForKeyPath:(NSString *)keyPath;
 
 - (NSDictionary *)dictionaryForKeys:(NSArray *)keys;
