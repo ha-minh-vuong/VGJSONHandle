@@ -78,7 +78,7 @@
 - (id)objectForKeyPath:(NSString *)keyPath;
 
 /*!
- * Returns a dictionary of input keys and theirs values is the value found in JSON.
+ * Returns a dictionary of input keys and theirs values found in JSON.
  * @discussion Collection keys/values into a dictionary for easy to use.
  * @keys The array of keys that are collected.
  * @return The dictionary of keys/values.
