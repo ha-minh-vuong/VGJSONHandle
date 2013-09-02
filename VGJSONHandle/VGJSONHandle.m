@@ -75,7 +75,7 @@
     return result;
 }
 
-- (NSDictionary *)dictionaryForKeys:(NSArray *)keys
+- (NSDictionary *)dictionaryWithValuesForKeys:(NSArray *)keys
 {
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
     for (NSString *key in keys) {

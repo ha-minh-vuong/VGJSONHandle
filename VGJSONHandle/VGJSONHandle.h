@@ -83,6 +83,6 @@
  * @keys The array of keys that are collected.
  * @return The dictionary of keys/values.
  */
-- (NSDictionary *)dictionaryForKeys:(NSArray *)keys;
+- (NSDictionary *)dictionaryWithValuesForKeys:(NSArray *)keys;
 
 @end
