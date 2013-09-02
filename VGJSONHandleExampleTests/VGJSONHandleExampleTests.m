@@ -145,7 +145,7 @@
     NSData *data = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     self.jsonObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     VGJSONHandle *vg = [[VGJSONHandle alloc] initWithJSONObject:self.jsonObject];
-    NSDictionary *dict = [vg dictionaryForKeys:@[@"city", @"two", @"children"]];
+    NSDictionary *dict = [vg dictionaryWithValuesForKeys:@[@"city", @"two", @"children"]];
     NSLog(@"%@", dict);
     STAssertNotNil(dict, @"The result can not be nil");
     STAssertTrue([dict[@"city"] isEqualToString:@"abc"], @"");
