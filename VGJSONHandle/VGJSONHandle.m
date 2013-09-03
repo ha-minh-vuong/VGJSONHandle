@@ -116,15 +116,17 @@
                 if ([key isEqualToString:k]) {
                     *value = [jsonObject objectForKey:key];
                     return;
-                } else if ([obj isKindOfClass:[NSDictionary class]] ||
-                           [obj isKindOfClass:[NSArray class]]) {
+                }
+                else if ([obj isKindOfClass:[NSDictionary class]]
+                         || [obj isKindOfClass:[NSArray class]]) {
                     [self objectForKey:key inJSONObject:obj value:value];
                 }
             }
-        } else if ([jsonObject isKindOfClass:[NSArray class]]) {
+        }
+        else if ([jsonObject isKindOfClass:[NSArray class]]) {
             for (id obj in jsonObject) {
-                if ([obj isKindOfClass:[NSDictionary class]] ||
-                    [obj isKindOfClass:[NSArray class]]) {
+                if ([obj isKindOfClass:[NSDictionary class]]
+                    || [obj isKindOfClass:[NSArray class]]) {
                     [self objectForKey:key inJSONObject:obj value:value];
                 }
             }
@@ -141,15 +143,17 @@
                 id jso = [jsonObject objectForKey:key];
                 [marray addObject:jso];
                 return;
-            } else if ([obj isKindOfClass:[NSDictionary class]] ||
-                       [obj isKindOfClass:[NSArray class]]) {
+            }
+            else if ([obj isKindOfClass:[NSDictionary class]]
+                     || [obj isKindOfClass:[NSArray class]]) {
                 [self objectsForKey:key inJSONObject:obj marray:marray];
             }
         }
-    } else if ([jsonObject isKindOfClass:[NSArray class]]) {
+    }
+    else if ([jsonObject isKindOfClass:[NSArray class]]) {
         for (id obj in jsonObject) {
-            if ([obj isKindOfClass:[NSDictionary class]] ||
-                [obj isKindOfClass:[NSArray class]]) {
+            if ([obj isKindOfClass:[NSDictionary class]]
+                || [obj isKindOfClass:[NSArray class]]) {
                 [self objectsForKey:key inJSONObject:obj marray:marray];
             }
         }
