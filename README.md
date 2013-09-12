@@ -2,7 +2,7 @@
 Installation
 ------------
 
-Copy two files VGJSONHandle.[h&m] into your project.
+Copy two files VGJSONHandle.[h&m] into your project and `#import VGJSONHandle.h`.
 
 Example
 -------
