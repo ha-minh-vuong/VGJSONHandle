@@ -1,4 +1,6 @@
 
+VGJSONHandle has some utility methods that can help you repare/manipulate json object easily. It can make sure a variable is not `nil`. If it is, its value will be convert to `NSNull`. Want to get values from json, just input a key, and you don't need to know about the shape of json object. If the key exists, wherever it is, you will get its values.
+
 Installation
 ------------
 
@@ -7,7 +9,7 @@ Copy two files VGJSONHandle.[h&m] into your project and `#import VGJSONHandle.h`
 Example
 -------
 
-* For posting json, it can make sure variables are not `nil`. If the variables are `nil`, they will change to `NSNull`. So, when post json, the program does not crash because of `nil` variables.
+* For reparing json to post to server, it can make sure variables are not `nil`. If the variables are `nil`, they will change to `NSNull`. So, when post json, the program does not crash because of `nil` variables.
 
 ```objective-c
 NSString *var1 = ...;
