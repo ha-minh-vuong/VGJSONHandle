@@ -13,7 +13,7 @@ Example
 NSString *var1 = ...;
 NSString *var2 = ...;
 NSString *var3 = ...;
-[VGJSONHandle convertNilToNSNull:5, protect(var1), protect(var2), protect(var3)];
+[VGJSONHandle convertNilToNSNull:3, protect(var1), protect(var2), protect(var3)];
 // Convert values of the variables to NSNull if they are nil. 
 ```
  
