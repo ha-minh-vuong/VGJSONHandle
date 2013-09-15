@@ -19,6 +19,49 @@ NSString *var3 = ...;
 NSDictionary *dict = @{@"key1": var1, @"key2": var2, @"key3": var3};
 ```
 
+* For getting values from json (json example from json.org)
+
+```json
+{
+    "menu": {
+        "id": "file",
+        "value": "File",
+        "popup": {
+            "menuitem": [
+                {
+                    "value": "New",
+                    "onclick": "CreateNewDoc()"
+                },
+                {
+                    "value": "Open",
+                    "onclick": "OpenDoc()"
+                },
+                {
+                    "value": "Close",
+                    "onclick": "CloseDoc()"
+                }
+            ]
+        }
+    }
+}
+```
+
+```objective-c
+VGJSONHandle *jsonHandle = [[VGJSONHandle alloc] initWithJSONObject:jsonObject];
+
+NSString *fileValue = [jsonHandle objectForKey:@"value"];
+// returns the first value it found.
+NSLog(@"%@", fileValue);  // fileValue ==> "File"
+
+NSArray *onclickValues = [jsonHandle objectsForKey:@"onclick"];
+// returns an array objects has the same key in json.
+NSLog(@"%@", onclickValues);
+// onclickValues ==> ["CreateNewDoc()", "OpenDoc()", "CloseDoc()"]
+
+NSDictionary *dict = [jsonHandle dictionaryWithValuesForKeys:@[@"id", @"value"];
+NSLog(@"%@", dict); // dict ==> {"id": "file", "value": "File",}
+```
+
 Tests
 -----
 
