@@ -7,7 +7,7 @@ Copy two files VGJSONHandle.[h&m] into your project and `#import VGJSONHandle.h`
 Example
 -------
 
-* For posting json, it can make sure variables are not `nil`. If the variables are `nil`, they will change to `NSNull`. So, when post json, the program does not crash.
+* For posting json, it can make sure variables are not `nil`. If the variables are `nil`, they will change to `NSNull`. So, when post json, the program does not crash because of `nil` variables.
 
 ```objective-c
 NSString *var1 = ...;
