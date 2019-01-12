@@ -1,5 +1,5 @@
 
-VGJSONHandle has some utility methods that can help you repare/manipulate json object easily. It can make sure a variable is not `nil`. If it is, its value will be convert to `NSNull`. Want to get values from json, just input a key, and you don't need to know about the shape of json object. If the key exists, wherever it is, you will get its values.
+VGJSONHandle has some utility methods that can help you manipulate json object easily. It can make sure a variable is not `nil`. If it is, its value will be convert to `NSNull`. Want to get values from json, just input a key, and you don't need to know about the shape of json object. If the key exists, wherever it is, you will get its values.
 
 Installation
 ------------
